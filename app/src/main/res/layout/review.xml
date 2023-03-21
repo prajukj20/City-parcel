@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitXY"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@mipmap/profile">
+    </ImageView>
+
+
+    <LinearLayout
+        android:id="@+id/profiledetails"
+        android:layout_width="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/profilepic"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/profilename"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Jessi Narayan"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp">
+
+        </TextView>
+        <RatingBar
+            android:id="@+id/starrating"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            style="@style/Widget.AppCompat.RatingBar.Indicator"
+            android:layout_marginLeft="5dp"
+            android:numStars="5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_toRightOf="@+id/profiledetails"
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:hint="7 feb 2022">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_below="@id/profilepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:hint="Food is really amazing.">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/discribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Easy lunch with easy bunny.Have lovely time.Goodfood,ambiance and services.A sunny is easter bunny lunch.">
+
+        </TextView>
+
+    </LinearLayout>
+
+</RelativeLayout>

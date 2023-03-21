@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/Relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/Thali"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Delux Vegiterian Thali"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_toRightOf="@+id/Thali"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Reset"
+            android:textColor="#C60D0D"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_below="@+id/Thali"
+            android:id="@+id/Roticlick"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/click"
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/circle"></ImageView>
+
+            <TextView
+                android:layout_toRightOf="@+id/click"
+                android:id="@+id/Roti"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Roti"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/Roti"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="$20"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_below="@+id/Roticlick"
+            android:id="@+id/chapaticlick"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/click1"
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/circle"></ImageView>
+
+            <TextView
+                android:layout_toRightOf="@+id/click1"
+                android:id="@+id/Chapati"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Chapati"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/Chapati"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="$20"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Relative2"
+            android:layout_below="@+id/chapaticlick"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/click2"
+                android:layout_width="15dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/circle"></ImageView>
+
+            <TextView
+                android:layout_toRightOf="@+id/click2"
+                android:id="@+id/Puri"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="Puri"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_alignParentRight="true"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/Puri"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="$20"
+                android:textSize="20dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/Relative2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:background="@drawable/squareorange"
+            android:text="Apply"></Button>
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.core.widget.NestedScrollView>

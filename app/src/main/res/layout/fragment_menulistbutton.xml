@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".menulistbutton">
+
+
+    <Spinner
+        android:background="@drawable/squareorange"
+        android:id="@+id/spinner"
+        android:entries="@array/type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        ></Spinner>
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/squareorange"
+        android:layout_below="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        ></Spinner>
+
+    <RelativeLayout
+        android:layout_below="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/Hotelname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hotelname1"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/menu1"
+            android:layout_below="@+id/Hotelname1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hotel_menu"></EditText>
+
+
+        <EditText
+            android:id="@+id/Hotel_contain"
+            android:layout_below="@+id/menu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hotel_contain"></EditText>
+
+
+        <EditText
+            android:id="@+id/review1"
+            android:layout_below="@+id/Hotel_contain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ReviewAverage"></EditText>
+
+        <EditText
+            android:id="@+id/imageurl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/review1"
+            android:hint="Image"></EditText>
+
+        <EditText
+            android:id="@+id/prize1"
+            android:layout_below="@+id/imageurl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Prize"></EditText>
+
+
+        <Button
+            android:id="@+id/summit1"
+            android:layout_below="@+id/prize1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Summit"></Button>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

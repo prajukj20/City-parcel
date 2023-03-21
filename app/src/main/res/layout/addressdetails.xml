@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rahul Shah"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:textColor="@color/black">
+
+            </TextView>
+            <TextView
+                android:layout_below="@+id/username"
+                android:id="@+id/use_add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Rahul Shah D-276, Oshiwara Ind Estate, Opp King Circle, Sion, Mumbai."
+                />
+            <TextView
+                android:layout_below="@+id/use_add"
+                android:id="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="90760578787"></TextView>
+
+            <TextView
+                android:id="@+id/emailid"
+                android:layout_below="@+id/mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="prajukj20@gmail.com"></TextView>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

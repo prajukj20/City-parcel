@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menupaymenttab_fragment">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/paymentpage"
+        android:layout_below="@+id/paymenttab"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+    </androidx.viewpager.widget.ViewPager>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/paymenttab"
+        android:layout_width="match_parent"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/black"
+        app:tabIconTint="@color/cardview_dark_background"
+        android:layout_alignParentTop="true"
+        android:layout_height="?attr/actionBarSize" />
+
+
+
+
+</RelativeLayout>

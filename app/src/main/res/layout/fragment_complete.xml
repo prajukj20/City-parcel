@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".complete">
+
+
+    <ImageView
+        android:id="@+id/thankyou"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/thankyou"></ImageView>
+    <TextView
+        android:id="@+id/thankyoutext"
+        android:layout_below="@+id/thankyou"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank you ! "
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="50dp"></TextView>
+
+    <TextView
+        android:id="@+id/orderthank"
+        android:layout_below="@+id/thankyoutext"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="For your order "
+        android:textColor="#636161"
+        android:textStyle="bold"
+        android:textSize="20dp"></TextView>
+
+    <TextView
+        android:id="@+id/discribethank"
+        android:layout_below="@+id/orderthank"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:text="your order has been processed. we will let you know once the order is picked from the outlet check the status of your order. "
+        android:textColor="#636161"
+        android:textStyle="bold"
+        android:textSize="20dp"></TextView>
+
+
+
+</RelativeLayout>

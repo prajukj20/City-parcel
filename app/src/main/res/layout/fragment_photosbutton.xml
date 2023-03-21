@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".photosbutton">
+
+    <Spinner
+        android:id="@+id/spineer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ></Spinner>
+
+    <Spinner
+        android:id="@+id/spineer4"
+        android:layout_below="@+id/spineer3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ></Spinner>
+    <EditText
+        android:id="@+id/hotelid"
+        android:layout_below="@+id/spineer4"
+        android:layout_width="match_parent"
+        android:hint="Hotelid"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/imageurlnew"
+        android:layout_below="@+id/hotelid"
+        android:layout_width="match_parent"
+        android:hint="ImageUrl"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/summit3"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/imageurlnew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summit"></Button>
+
+
+
+</RelativeLayout>

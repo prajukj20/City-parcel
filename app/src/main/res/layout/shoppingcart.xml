@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/hotelnmaeadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Adisha Tiffin Service">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/hoteltypeadd"
+        android:layout_below="@+id/hotelnmaeadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="17dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#7E7B7B"
+        android:textStyle="normal"
+        android:text="North Indian,Chianes">
+
+    </TextView>
+    <ImageView
+        android:layout_below="@+id/hoteltypeadd"
+        android:id="@+id/namepaneer"
+        android:layout_width="150dp"
+        android:scaleType="fitXY"
+        android:layout_height="150dp"
+        android:src="@mipmap/paneermasala">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_below="@+id/hoteltypeadd"
+        android:layout_toRightOf="@+id/namepaneer"
+        android:id="@+id/paneermasala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dishname2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Paneer Masala"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="40dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/dishprize1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="$150"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_below ="@+id/dishname1">
+
+        </TextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_shop"
+        android:layout_width="259dp"
+        android:layout_height="69dp"
+        android:layout_below="@+id/paneermasala"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="1dp"
+        android:layout_toRightOf="@+id/namepaneer"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/decre"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/whitebackground"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="normal"></TextView>
+
+        <TextView
+            android:id="@+id/incre"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/whitebackground"
+            android:gravity="center"
+            android:text="+"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/squareorange"
+            android:gravity="center"
+            android:textColor="#0E0E0E"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/addons"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="Add ons"
+            android:textColor="#0E0E0E"
+            android:textSize="18dp"
+            android:textStyle="bold"></TextView>
+
+
+    </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

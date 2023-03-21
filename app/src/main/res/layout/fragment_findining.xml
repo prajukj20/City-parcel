@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:background="#AEDC78"
+            android:text="RestroAdd Button"></Button>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_below="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:background="#AEDC78"
+            android:text="HomemadedishAdd Button"></Button>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_below="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:background="#AEDC78"
+            android:textStyle="bold"
+            android:text="FarmfoodAdd Button"></Button>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_below="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#AEDC78"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="GiftAdd Button"></Button>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_below="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:background="#AEDC78"
+            android:textStyle="bold"
+            android:text="Menulist"></Button>
+        <Button
+            android:id="@+id/button7"
+            android:layout_below="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:background="#AEDC78"
+            android:textStyle="bold"
+            android:text="Photos"></Button>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_below="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#AEDC78"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="Review"></Button>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_below="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="#AEDC78"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="About"></Button>
+
+
+
+    </RelativeLayout>
+    <FrameLayout
+        android:id="@+id/frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</RelativeLayout>

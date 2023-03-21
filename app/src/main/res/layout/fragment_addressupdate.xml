@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content"
+    tools:context=".Addressupdate">
+
+    <RelativeLayout
+        android:id="@+id/Addbuttonview"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/addressdelevry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delevery Address"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            ></TextView>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:id="@+id/scrollrecycler"
+            android:layout_below="@+id/addressdelevry"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:visibility="visible"
+                android:id="@+id/recycle1"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/addressdelevry"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:visibility="visible"
+            android:id="@+id/buttonadd"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/scrollrecycler"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:text="Add new address"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"></Button>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linerpay"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/hotelid2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/whitebackground"
+            android:hint="hotelid"
+            android:padding="10dp"
+            android:textSize="18dp"></EditText>
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/whitebackground"
+            android:hint="Email"
+            android:padding="10dp"
+            android:textSize="18dp"></EditText>
+        <EditText
+            android:id="@+id/nameaddress"
+            android:layout_below="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/whitebackground"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/locationaddress"
+            android:layout_below="@+id/nameaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/whitebackground"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/landmark"
+            android:layout_below="@+id/locationaddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nearest Landmark"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/whitebackground"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/state"
+            android:layout_below="@+id/landmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/whitebackground"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/city"
+            android:layout_below="@+id/state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:textSize="18dp"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/whitebackground"
+            ></EditText>
+
+        <EditText
+            android:id="@+id/typeaddress"
+            android:layout_below="@+id/city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Type of Address"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/whitebackground"
+            ></EditText>
+
+
+        <RelativeLayout
+            android:id="@+id/bothlayout"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/typeaddress"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/circle"/>
+<!--                    android:background="@drawable/circlegary"></ImageView>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Home"
+                    android:textColor="#353434"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"></TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_toRightOf="@+id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@mipmap/circle"/>
+<!--                    android:background="@drawable/circlegary"></ImageView>-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Office"
+                    android:textColor="#353434"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20dp"></TextView>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutnew"
+            android:layout_width="305dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/bothlayout"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@mipmap/square"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="39dp"
+                android:layout_marginLeft="10dp"
+                android:text="Save this my default address"
+                android:textColor="#353434"
+                android:textSize="20dp"
+                android:textStyle="bold"></TextView>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/summitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:text="Summit"></Button>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/totalprise"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="Total"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            ></TextView>
+        <TextView
+            android:id="@+id/prise"
+            android:layout_toRightOf="@+id/total"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:text="$900"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            ></TextView>
+
+        <Button
+            android:id="@+id/Continuebutton1"
+            android:layout_width="213dp"
+            android:layout_height="37dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="9dp"
+            android:background="@drawable/squareorange"
+            android:gravity="center"
+            android:text="Pay Now"
+            android:textAllCaps="false"
+            android:textColor="@color/white"></Button>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

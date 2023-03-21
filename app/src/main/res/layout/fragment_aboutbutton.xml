@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".aboutbutton">
+
+    <Spinner
+        android:id="@+id/restrophoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ></Spinner>
+
+    <Spinner
+        android:id="@+id/pic"
+        android:layout_below="@+id/restrophoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        ></Spinner>
+
+    <EditText
+        android:id="@+id/cusin"
+        android:layout_below="@+id/pic"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:hint="Cusin"
+        android:layout_height="wrap_content"></EditText>
+
+    <EditText
+        android:id="@+id/Facilities"
+        android:layout_below="@+id/cusin"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:hint="Facilities"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"></EditText>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/Cusinbutton"
+        android:layout_below="@+id/Facilities"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:background="#68DC6D"
+        android:layout_height="wrap_content"
+        android:text="Cusin"></Button>
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/Facilitiesbutton"
+        android:layout_below="@+id/Cusinbutton"
+        android:textStyle="bold"
+        android:background="#68DC6D"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facilities"></Button>
+
+
+
+
+</RelativeLayout>

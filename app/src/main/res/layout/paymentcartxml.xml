@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/crditno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="1234-5678-9012-3456"></TextView>
+
+         <ImageView
+             android:id="@+id/cardimage"
+             android:layout_centerVertical="true"
+             android:layout_toRightOf="@+id/crditno"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:src="@mipmap/crditcard"></ImageView>
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.core.widget.NestedScrollView>

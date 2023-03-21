@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".farmfoodbutton">
+
+    <EditText
+        android:id="@+id/farmfoodname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Farmfood Name"
+        ></EditText>
+
+    <EditText
+        android:id="@+id/Description"
+        android:layout_below="@+id/farmfoodname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"></EditText>
+
+
+
+    <EditText
+        android:id="@+id/faverites"
+        android:layout_below="@+id/Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="faverites"></EditText>
+
+
+    <EditText
+        android:id="@+id/review"
+        android:layout_below="@+id/faverites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ReviewAverage"></EditText>
+
+    <EditText
+        android:id="@+id/imageurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/review"
+        android:hint="Image"></EditText>
+
+    <EditText
+        android:id="@+id/prize"
+        android:layout_below="@+id/imageurl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Prize"></EditText>
+
+
+    <Button
+        android:id="@+id/summit"
+        android:layout_below="@+id/prize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Summit"></Button>
+
+
+
+</RelativeLayout>

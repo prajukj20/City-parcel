@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".startingpage2ndpager">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/menubar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/arrow"></ImageView>
+
+                <TextView
+                    android:id="@+id/menusign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Menu"
+                    android:textColor="#131111"
+
+                    android:textStyle="bold"></TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alertbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.SearchView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </androidx.appcompat.widget.SearchView>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:src="@mipmap/alert">
+
+                </ImageView>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/lunchbox1"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:src="@mipmap/tiffinimage">
+
+        </ImageView>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/hotelname1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Ananth Palace"
+                android:gravity="left"
+                android:layout_marginRight="150dp"
+                android:textColor="#000"
+
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+
+            </TextView>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tablename"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Reserve Table"
+                android:background="@drawable/squareorange"
+                android:textColor="#EFE6E6"
+                android:layout_toRightOf="@+id/hotelname1"
+                android:textSize="18dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/hoteltype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotelname1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="North Indian,Chiness"
+            android:textColor="#000"
+            android:textSize="10dp"
+            android:textStyle="normal">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hoteltype">
+
+            <LinearLayout
+
+                android:id="@+id/ratingsdistance"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/rating"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/hotelnam1type"
+                    android:layout_marginLeft="20dp"
+                    android:numStars="1"></RatingBar>
+
+
+                <ImageView
+                    android:id="@+id/distancelogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/distance">
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/ratingsdistance"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:gravity="center"
+                    android:text="Veg"
+                    android:textStyle="bold"></TextView>
+
+
+                <Switch
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentBottom="true"
+            app:tabIconTint="@color/cardview_dark_background"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/black" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:visibility="visible"
+            android:id="@+id/pager2"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
